@@ -35,7 +35,7 @@ const necklace = {
 };
 
 const nameplateNecklace = {
-    id: 'nameplate necklace',
+    id: 'nameplate-necklace',
     name: 'Nameplate Necklace',
     image: 'nameplate-necklace.jpeg',
     description: 'Gold necklace with name.',
@@ -44,11 +44,11 @@ const nameplateNecklace = {
 };
 
 const noseRing = {
-    id: 'nose ring',
+    id: 'nose-ring',
     name: 'Nose Ring',
     image: 'nose-ring.jpeg',
     description: 'A simple gold nose ring.',
-    category: 'body jewelry',
+    category: 'body-jewelry',
     price: 30.00,
 };
 
