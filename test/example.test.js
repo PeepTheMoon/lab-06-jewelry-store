@@ -1,4 +1,5 @@
 // IMPORT MODULES under test here:
+import renderJewelry from '../ren'
 // import example from '../src/example.js';
 
 const test = QUnit.test;
