@@ -4,16 +4,12 @@ import findById from '../common/utils.js';
 
 const test = QUnit.test;
 
-QUnit.module('returns an item with the matching .id property');
+QUnit.module('utils');
 
 test('findById', assert => {
     //Arrange
     const arrayOfItems = [
         { id: 'nose-ring', quantity: 2 }, 
-        {
-            id: 'watch',
-            quantity: 1
-        } 
     ];
     // Set up your parameters and expectations
     const result = findById(arrayOfItems, 'nose-ring');
@@ -23,4 +19,18 @@ test('findById', assert => {
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(result.id, 'nose-ring');
+});
+
+test('calcLineItem', assert => {
+    //Arrange
+    const quantity = '2';
+    const price = '3';
+    // Set up your parameters and expectations
+    const result = quantity * price;
+    //Act 
+    // Call the function you're testing and set the result to a const
+    
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.equal(result, '6');
 });
