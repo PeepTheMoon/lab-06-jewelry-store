@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf4478MI9kBCvMgcdoeSQzbgs4h6CaUp5Lhcw64grfFT3mnb35&usqp=CAU");
+    
+    }
+
+header {
+    background-image: radial-gradient(rgb(117, 115, 114), rgb(44, 43, 42));
+    opacity: 0.9;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: black;
+    }
+
+    nav {
+        font-size: 15px;
+    }
