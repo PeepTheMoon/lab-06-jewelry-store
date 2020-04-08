@@ -1,13 +1,12 @@
 //Go get functions and arrays from imports
-
 import cart from '../Data/cart.js';
 import jewelry from '../Data/product-data.js';
-import findById /*{ calcLineItem, roundCurreny }*/ from '../common/utils.js';
+import findById, { calcOrderTotal, toUSD } from '../common/utils.js';
 import { renderLineItem } from '../shopping-cart/render-line-item.js';
-//import renderJewelry from '../products/render-jewelry.js';
 
 // Locate on the DOM where the line items will go
 const tbody = document.querySelector('tbody');
+const orderTotalCell = document.getElementById('order-total-cell');
 
 // Loop through cart items
 for (let i = 0; i < cart.length; i++) {
@@ -25,3 +24,7 @@ for (let i = 0; i < cart.length; i++) {
     tbody.appendChild(dom);
 }
 
+// Calculate the complete order total
+const orderTotal = calcOrderTotal(cart, jewelry);
+//Update the order total cell's text content
+orderTotalCell.textContent = toUSD(orderTotal);

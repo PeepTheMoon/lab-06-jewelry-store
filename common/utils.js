@@ -1,6 +1,3 @@
-//import cart from '../Data/cart.js';
-//import jewelry from '../Data/product-data.js';
-
 //function findById takes in an array and an id
 export default function findById(array, id) {
     let foundArrayItem;
@@ -25,4 +22,25 @@ export function calcLineItem(quantity, price) {
 export function roundCurrency(amount) {
     //rounds result two decimal places
     return Math.round(amount * 100) / 100;
+}
+// Convert number to USD
+export function toUSD(number) {
+    return number.toLocaleString('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    });
+}
+
+// Calculate totl of cart data
+export function calcOrderTotal(cart, jewelry) {
+    //Initialize state
+    let orderTotal = 0;
+    // Loop through the cart items
+    for (let i = 0; i < cart.length; i++) {
+        const lineItem = cart[i];
+        const jewelryItem = findById(jewelry, lineItem.id);
+        const lineTotal = calcLineItem(lineItem.quantity, jewelryItem.price);
+        orderTotal += lineTotal;
+    }
+    return roundCurrency(orderTotal);
 }
