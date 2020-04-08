@@ -21,10 +21,10 @@ test('renders a line item from cart', assert => {
     };
     // Set up your parameters and expectations
     const expected = '<tr><th>Statement Ring</th><th>$54.00</th><th>1</th><th>$54.00</th></tr>';
+
     //Act 
     // Call the function you're testing and set the result to a const
     const dom = renderLineItem(cartItem, ring);
-    console.log(ring[1]);
     const html = dom.outerHTML;
     //Assert
     // Make assertions about what is expected valid result
