@@ -17,7 +17,8 @@ test('renders a jewelry item', assert => {
         price: 54.00,
     };
     // Set up your parameters and expectations
-    const expected = '<li class="rings" title="A simple gold statement ring featuring geometric shapes."><h3>Statement Ring</h3><img src="../assets/ring.jpeg" alt="Statement Ring image"><p class="price">$54.00<button value="undefined">Add to cart</button></p></li>';
+    const expected = '<li class="rings" title="A simple gold statement ring featuring geometric shapes."><h3>Statement Ring</h3><img src="../assets/ring.jpeg" alt="Statement Ring image"><p class="price">$54.00<button value="ring">Add to cart</button></p></li>';
+
     //Act 
     // Call the function you're testing and set the result to a const
     const dom = renderJewelry(ring);
