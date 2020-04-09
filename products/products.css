@@ -1,11 +1,16 @@
 body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf4478MI9kBCvMgcdoeSQzbgs4h6CaUp5Lhcw64grfFT3mnb35&usqp=CAU");
-    
     }
 
+.header-image {
+
+}
+
+
 header {
-    background-image: radial-gradient(rgb(117, 115, 114), rgb(73, 72, 71));
+    /* background-image: -webkit-radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71)), url('../assets/light-grey-pattern.jpeg'); */
     opacity: 0.9;
+    background-image: url('../assets/light-grey-pattern.jpeg'), -webkit-radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71));
     border-radius: 8px;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -14,7 +19,8 @@ header {
     padding-bottom: 5px;
     margin-left: 80px;
     margin-right: 80px;
-    color: black;
+    color: whitesmoke;
+    
     }
 
     nav {
