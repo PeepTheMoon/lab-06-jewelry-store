@@ -1,10 +1,17 @@
 body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf4478MI9kBCvMgcdoeSQzbgs4h6CaUp5Lhcw64grfFT3mnb35&usqp=CAU");
-    
+    }
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    -webkit-text-stroke: 1px black;
+    color: rgb(53, 54, 54);
+    font-size: 50px;
     }
 
 header {
-    background-image: radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71));
+    background-color: radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71));
+    background-image: url('../assets/light-grey-pattern.jpeg');
     opacity: 0.9;
     border-radius: 8px;
     text-align: center;
@@ -17,6 +24,14 @@ header {
     color: black;
     }
 
-    nav {
-        font-size: 15px;
-    }
+nav {
+    font-size: 15px;
+}
+
+.cart-nav {
+    margin-left: 200px;
+}
+
+.products-nav {
+    margin-right: 200px;
+}
