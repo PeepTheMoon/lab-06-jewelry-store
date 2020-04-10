@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorn. Add New Inventory</title>
+    <link rel="stylesheet" href="../common/main.css">
+    <link rel="stylesheet" href="new-product-entry.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Gotu&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Adorn.</h1>
+        <h2>Locally crafted jewelry</h2>
+            <p>Add New Inventory</p>
+        <nav>
+            <a class="home-nav" href="../">Adorn.   Home</a>
+            <a class="products-nav" href="../products">Available Products</a>
+            <a class="cart-nav" href="../shopping-cart">Your Cart</a>
+        </nav>
+    </header>
+    <main>
+        <form id="add-new-inventory">
+            <label>
+                Product ID:
+                <input id="id" name="id" /> 
+            </label>
+            <label>
+                Product Name:
+                <input id="name" name="name" /> 
+            </label>
+            <label>
+                Product Image:
+                <input id="image" name="image" /> 
+            </label>
+            <label>
+                Product Description:
+                <input id="description" name="description" /> 
+            </label>
+            <label>
+                Product Catagory:
+                <input id="catagory" name="catagory" /> 
+            </label>
+            <label>
+                Product Price:
+                <input id="price" name="price" /> 
+            </label>
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="new-product-entry.js" type="module"></script>
+    </header>
+</body>
+</html>
