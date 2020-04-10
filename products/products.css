@@ -1,5 +1,5 @@
-body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf4478MI9kBCvMgcdoeSQzbgs4h6CaUp5Lhcw64grfFT3mnb35&usqp=CAU")
+/* body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhb3tVvVAYy7-LZ39FglqrPJn-taUkEqzlxT9H5X_IKxl9bEfc&usqp=CAU")
     }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
     }
 
 header {
-    /* background-image: -webkit-radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71)), url('../assets/light-grey-pattern.jpeg'); */
+    /* background-image: -webkit-radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71)), url('../assets/light-grey-pattern.jpeg');
     opacity: 0.9;
     background-image: url('../assets/light-grey-pattern.jpeg'), -webkit-radial-gradient(rgb(161, 158, 156), rgb(73, 72, 71));
     border-radius: 8px;
@@ -39,4 +39,4 @@ nav {
 
 .cart-nav {
     margin-left: 200px;
-}
+} */ 
